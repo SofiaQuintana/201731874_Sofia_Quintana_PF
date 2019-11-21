@@ -1,0 +1,61 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Aug 23, 2018, 12:42:46 AM
+    Author     : zofia
+*/
+
+.dual-card {
+    max-width: 85%;
+    margin-top: 50px;
+    margin-left: 100px;
+    border-color: black;
+}
+
+.single-card {
+    border-color: black;
+}
+
+.custom-file {
+    margin-bottom: 10px;
+}
+
+.btn-submit {
+    width: 100%;
+}
+
+.btn-light {
+    color: whitesmoke;
+    background-color: #16516D;
+    border-color: #16516D;
+}
+
+.page-footer {
+    background-color: #343a40;
+    padding-top: 2vh;
+    padding-bottom: 0.1vh;
+    margin-top: 50px;
+}
+
+@media (max-width: 768px) 
+{
+  li
+  {
+    margin-left: 0;
+    margin-bottom: 1vh;
+  }
+  
+}
+
+.copyright
+{
+  text-align: center;
+}
+
+.logo
+{
+  height: 5vh;
+}

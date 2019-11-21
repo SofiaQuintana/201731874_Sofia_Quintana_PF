@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Lexical Analyzer</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        
+        <nav class="navbar navbar-dark bg-dark">
+            <a class="navbar-brand" href="/">
+                <img src="images/logo-usac.png" style="width: 15%" alt="USAC">
+            </a>
+            <div class="dropdown">
+                <button class="btn btn-outline-light btn-lg dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Lexer 
+                </button>               
+            </div> 
+        </nav>
+
+        <div class="card-group dual-card">
+            <div class="card mb-3 single-card" id="singleCardDiv">           
+                <div class="card-body"> 
+                    <h4 class="mb-3 text-center">Input</h4>
+
+                    <div class="custom-file">
+                        <input type="file" class="custom-file-input" id="inputGroupFile01" onchange="readFile(this.files)">
+                        <label class="custom-file-label" for="inputGroupFile01">Choose file</label>
+                    </div>
+                    <br>
+
+                    <div class="input-group">
+                        <textarea class="form-control" id="textArea" name="INPUT" cols="120" rows="15"></textarea>
+                    </div>
+                    <br>
+                    <button type="button" class="btn btn btn-dark btn-submit" onclick="analyze()">Analizar</button>
+                </div>
+            </div> 
+            <div class="card mb-3 single-card">           
+                <div class="card-body"> 
+                    <h4 class="mb-3 text-center">Output</h4>
+                    <div class="mb-3">
+                        <label for="output">Errores</label>
+                        <textarea class="form-control" id="output" rows="7" readOnly="readOnly"></textarea>
+                    </div>
+                    <div class="mb-3">
+                        <label for="tokens">Tokens</label>
+                        <textarea class="form-control" id="tokens" rows="7" readOnly="readOnly"></textarea>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <footer class="page-footer">
+            <div>
+                <ul class="list-unstyled list-inline text-center">
+                    <li class="list-inline-item btn-floating mx-1">
+                        <a href="#">
+                            <img class="logo" src="https://cdn2.iconfinder.com/data/icons/black-white-social-media/32/online_social_media_facebook-128.png">
+                        </a>
+                    </li>
+                    <li class="list-inline-item btn-floating mx-1">
+                        <a href="#">
+                            <img class="logo" src="https://cdn2.iconfinder.com/data/icons/black-white-social-media/32/twitter_online_social_media-128.png">
+                        </a>
+                    </li>
+                    <li class="list-inline-item btn-floating mx-1 ">
+                        <a href="https://www.instagram.com/zofiagutierrez_/">
+                            <img class="logo" src="https://cdn2.iconfinder.com/data/icons/black-white-social-media/32/instagram_online_social_media_photo-128.png">
+                        </a>
+                    </li>
+                    <li class="list-inline-item btn-floating mx-1">
+                        <a href="#">
+                            <img class="logo" src="https://cdn2.iconfinder.com/data/icons/black-white-social-media/32/online_social_media_google_plus-128.png">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="copyright">
+                <p> Copyright GT hospital &copy; 2019, All rights reserved. </p>
+            </div>
+        </footer>
+        
+        
+        
+        
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <script type ="text/javascript" src="javascript/analizador-lexico.js"></script>
+    </body>   
+</html>
+
